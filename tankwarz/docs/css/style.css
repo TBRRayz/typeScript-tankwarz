@@ -1,0 +1,59 @@
+body {
+    background-color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow:hidden;
+    margin:0px; padding:0px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body * {
+    position: absolute;
+    display: block;
+    margin:0px; padding:0px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+
+container {
+    background-image: url(../images/background.jpg);
+    background-repeat: repeat;
+    width:800px; height:600px;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    overflow:hidden;
+}
+
+score {
+    color:white;
+    font-size : 22px;
+    padding:20px;
+}
+
+tank1 {
+    background-image: url(../images/tank.png);
+    width:50px; height: 61px;
+}
+tank2 {
+    background-image: url(../images/tank2.png);
+    width:50px; height: 61px;
+}
+
+
+
+cloud {
+    background-image: url(../images/cloud.png);
+    width:150px; height: 57px;
+    animation: cloudanimation 15s linear infinite;
+}
+
+
+
+@keyframes cloudanimation {
+  0% {
+    transform: translate(-150px, 30px);
+  }
+  
+  100% {
+    transform: translate(800px, 30px);
+  }
+}
